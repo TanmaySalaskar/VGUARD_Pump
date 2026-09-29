@@ -1,0 +1,32 @@
+{
+  "rows": 315,
+  "features": 2672,
+  "fault_labels": 18,
+  "fault_pump_groups": 65,
+  "eligible_features": 2666,
+  "constant_or_all_missing_features": 6,
+  "candidate_features": 64,
+  "settings": {
+    "data_dir": ".",
+    "output_dir": "variation_results",
+    "keys_csv": null,
+    "min_coverage": 0.95,
+    "min_samples": 2,
+    "min_pumps": 2,
+    "max_sample_pct": 20.0,
+    "max_pump_pct": 20.0,
+    "min_fault_pct": 60.0,
+    "top_n": 20,
+    "pair_top_n": 10,
+    "no_plots": false
+  },
+  "input_files": [
+    "ctvt_singlefault_peaks_freq.csv",
+    "digital_feats_updt.csv",
+    "physics_features.csv",
+    "stats_features_2.csv"
+  ],
+  "analysis_scope": "all supplied runs (exploratory)",
+  "method": "Equal-fault, equal-pump empirical variance decomposition; ddof=0",
+  "interpretation": "Variance shares, not accuracy, CV%, or probabilities"
+}
